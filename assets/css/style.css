@@ -341,7 +341,7 @@ strong, b {
 
 .btn-secondary:hover {
     background: var(--color-primary);
-    color: var(--color-white);
+    color: var(--color-primary);
 }
 
 .btn-ghost {
