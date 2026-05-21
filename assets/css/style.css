@@ -366,7 +366,7 @@ strong, b {
 /* --------- Hero --------- */
 .hero {
     /* 1. On force l'image avec le lien copié (mets ton lien GitHub entre les guillemets) */
-    background-image: url() !important; 
+    background-image: url('https://github.com/benoitchanson-ui/capitalisation-massajobs/blob/main/assets/Accueil%20bandeau.png') !important; 
     
     /* 2. On force la section à être visible même si elle est vide */
     min-height: 80vh !important; /* Prend 80% de la hauteur de l'écran */
