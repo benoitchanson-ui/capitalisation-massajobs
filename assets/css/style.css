@@ -367,7 +367,7 @@ strong, b {
 .hero {
     /* Le "../" permet de sortir du dossier CSS pour trouver le dossier Assets */
     /* Attention à bien mettre les guillemets simples à cause de l'espace dans le nom */
-    background-image: url("https://github.com/benoitchanson-ui/capitalisation-massajobs/blob/main/assets/Accueil%20bandeau.png");
+    background-image: url('https://github.com/benoitchanson-ui/capitalisation-massajobs/blob/main/assets/Accueil%20bandeau.png');
     
     background-size: cover;
     background-position: center;
