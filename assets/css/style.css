@@ -367,7 +367,7 @@ strong, b {
 /* --------- Hero --------- */
 .hero {
     /* 1. Utilisation du lien BRUT (raw) officiel de GitHub avec la bonne extension .jpg */
-  background-image: url('../Accueil%20bandeau.png') !important;
+  background-image: url('https://github.com/benoitchanson-ui/capitalisation-massajobs/blob/main/assets/hero-bg.png') !important;
     
     /* 2. On force la section à prendre une belle hauteur sur l'écran */
     min-height: 75vh !important; 
