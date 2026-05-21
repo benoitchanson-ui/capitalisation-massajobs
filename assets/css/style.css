@@ -543,6 +543,7 @@ strong, b {
     color: var(--color-text);
     margin-bottom: var(--space-5);
     max-width: 600px;
+   font-weight: 600;
 }
 
 .hero__cta {
