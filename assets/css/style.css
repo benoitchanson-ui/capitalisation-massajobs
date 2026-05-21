@@ -364,27 +364,47 @@ strong, b {
 }
 
 /* --------- Hero --------- */
+/* --------- Hero --------- */
 .hero {
-    /* 1. On force l'image avec le lien copié (mets ton lien GitHub entre les guillemets) */
-    background-image: url('https://github.com/benoitchanson-ui/capitalisation-massajobs/blob/main/assets/Accueil%20bandeau.png') !important; 
+    /* 1. Utilisation du lien BRUT (raw) officiel de GitHub avec la bonne extension .jpg */
+    background-image: url('https://raw.githubusercontent.com/benoitchanson-ui/capitalisation-massajobs/main/assets/Accueil%20bandeau.jpg') !important; 
     
-    /* 2. On force la section à être visible même si elle est vide */
-    min-height: 80vh !important; /* Prend 80% de la hauteur de l'écran */
+    /* 2. On force la section à prendre une belle hauteur sur l'écran */
+    min-height: 75vh !important; 
     display: flex !important;
     align-items: center;
     
-    /* 3. Ajustements de l'image */
+    /* 3. Ajustements parfaits de l'image */
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
     position: relative; 
 }
 
-/* Sécurité pour que le texte reste visible par-dessus */
+/* 💡 ASTUCE LISIBILITÉ : On ajoute un voile sombre (overlay) pour que ton texte 
+   blanc/sombre se détache magnifiquement bien de l'image de fond */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(31, 78, 115, 0.65); /* Un bleu profond (ta couleur var(--color-primary)) à 65% d'opacité */
+    z-index: 1;
+}
+
+/* On force tout le contenu (texte, boutons, citations) à passer au-dessus du voile */
 .hero__inner {
     position: relative;
     z-index: 2;
     width: 100%;
+}
+
+/* Optionnel : On blanchit les textes du Hero pour un contraste maximal sur le fond bleu/image */
+.hero h1, 
+.hero__lead {
+    color: var(--color-white) !important;
+}
+.hero h1 em {
+    color: #F2EBDF !important; /* Un joli sable clair pour le mot en italique */
 }
 
 .hero__inner {
