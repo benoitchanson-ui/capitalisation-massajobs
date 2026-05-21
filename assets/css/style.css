@@ -365,23 +365,8 @@ strong, b {
 
 /* --------- Hero --------- */
 .hero {
-    /* Le "../" permet de sortir du dossier CSS pour trouver le dossier Assets */
-    /* Attention à bien mettre les guillemets simples à cause de l'espace dans le nom */
-    background-image: url('https://picsum.photos/1920/1080');
-   
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative; 
-}
-
-/* On garde le voile sombre pour la lisibilité du texte */
-.hero::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.4); 
-    z-index: 1;
+    background-color: red !important;
+    height: 500px !important;
 }
 
 .hero__inner {
