@@ -366,45 +366,41 @@ strong, b {
 /* --------- Hero --------- */
 /* --------- Hero --------- */
 .hero {
-    /* 1. Utilisation du lien BRUT (raw) officiel de GitHub avec la bonne extension .jpg */
-background-image: url('https://benoitchanson-ui.github.io/capitalisation-massajobs/assets/Accueil bandeau.png') !important;
+    /* Le chemin exact configuré en .png */
+    background-image: url('../assets/Accueil bandeau.png') !important; 
     
-    /* 2. On force la section à prendre une belle hauteur sur l'écran */
     min-height: 75vh !important; 
     display: flex !important;
     align-items: center;
     
-    /* 3. Ajustements parfaits de l'image */
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
     position: relative; 
 }
 
-/* 💡 ASTUCE LISIBILITÉ : On ajoute un voile sombre (overlay) pour que ton texte 
-   blanc/sombre se détache magnifiquement bien de l'image de fond */
+/* Le voile sombre pour protéger la lisibilité du texte */
 .hero::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(31, 78, 115, 0.65); /* Un bleu profond (ta couleur var(--color-primary)) à 65% d'opacité */
+    background: rgba(31, 78, 115, 0.75) !important; /* Bleu Massajobs */
     z-index: 1;
 }
 
-/* On force tout le contenu (texte, boutons, citations) à passer au-dessus du voile */
 .hero__inner {
     position: relative;
     z-index: 2;
     width: 100%;
 }
 
-/* Optionnel : On blanchit les textes du Hero pour un contraste maximal sur le fond bleu/image */
+/* On force le texte en blanc/sable pour le contraste */
 .hero h1, 
 .hero__lead {
     color: var(--color-white) !important;
 }
 .hero h1 em {
-    color: #F2EBDF !important; /* Un joli sable clair pour le mot en italique */
+    color: var(--color-bg-alt) !important;
 }
 
 .hero__inner {
