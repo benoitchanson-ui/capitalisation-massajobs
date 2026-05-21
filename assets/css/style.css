@@ -365,44 +365,28 @@ strong, b {
 
 /* --------- Hero --------- */
 .hero {
-    /* On indique le chemin vers l'image dans ton dossier Assets */
-    /* Note : Ajuste l'extension (.jpg, .png, etc.) selon ton fichier */
-    background-image: url('https://picsum.photos/1920/1080');
+    /* Le "../" permet de sortir du dossier CSS pour trouver le dossier Assets */
+    /* Attention à bien mettre les guillemets simples à cause de l'espace dans le nom */
+    background-image: url('../Assets/Acceuil bandeau.jpg'); 
     
-    /* L'image va couvrir tout l'espace disponible sans se déformer */
     background-size: cover;
-    
-    /* L'image sera bien centrée */
     background-position: center;
-    
-    /* On évite que l'image se répète si la section est grande */
     background-repeat: no-repeat;
-    
-    /* Sécurité pour le texte : position relative pour gérer la superposition */
     position: relative; 
 }
 
-/* 💡 Astuce Pro : Si ton texte devient difficile à lire à cause de l'image, 
-   ajoute ce "voile" sombre par-dessus l'image mais sous le texte */
+/* On garde le voile sombre pour la lisibilité du texte */
 .hero::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.4); /* Assombrit le fond à 40% */
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.4); 
     z-index: 1;
 }
 
-/* On force le contenu à passer au-dessus du voile sombre */
 .hero__inner {
     position: relative;
     z-index: 2;
-}.hero {
-    padding: var(--space-8) 0 var(--space-7);
-    position: relative;
-    overflow: hidden;
 }
 
 .hero__inner {
