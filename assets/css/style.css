@@ -540,7 +540,7 @@ strong, b {
 .hero__lead {
     font-size: 1.1875rem;
     line-height: 1.6;
-    color: var(--color-massa-blue);
+    color: #6687AC ;
     margin-bottom: var(--space-5);
     max-width: 600px;
    font-weight: 600;
