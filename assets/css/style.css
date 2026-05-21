@@ -367,7 +367,7 @@ strong, b {
 .hero {
     /* On indique le chemin vers l'image dans ton dossier Assets */
     /* Note : Ajuste l'extension (.jpg, .png, etc.) selon ton fichier */
-    background-image: url('Assets/Accueil bandeau.png'); 
+    background-image: url('https://picsum.photos/1920/1080');
     
     /* L'image va couvrir tout l'espace disponible sans se déformer */
     background-size: cover;
