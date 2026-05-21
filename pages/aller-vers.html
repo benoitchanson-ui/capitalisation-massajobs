@@ -7,18 +7,27 @@
     <meta name="description" content="Comment Massajobs sort de ses bureaux pour aller à la rencontre des personnes éloignées de l'emploi : posture, modalités, ancrage territorial.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16.png">
+    <link rel="apple-touch-icon" href="../assets/img/logo-massajobs.png">
 </head>
 <body>
 
 <header class="site-header">
     <div class="site-header__inner">
-        <a href="../index.html" class="site-logo"><strong>Massajobs</strong><small>Capitalisation</small></a>
+        <a href="../index.html" class="site-logo">
+            <img src="../assets/img/logo-massajobs.png" alt="" class="site-logo__img" aria-hidden="true">
+            <span class="site-logo__text">
+                <strong>Massajobs</strong>
+                <small>Capitalisation</small>
+            </span>
+        </a>
         <button class="menu-toggle" aria-label="Menu" onclick="document.querySelector('.site-nav').classList.toggle('open')">☰</button>
         <nav class="site-nav">
             <a href="../index.html">Accueil</a>
-            <a href="methode.html">La méthode</a>
+            <div class="nav-dropdown"><a href="methode.html" class="nav-dropdown__trigger">La méthode</a><div class="nav-dropdown__menu"><a href="posture.html">Éclairer notre posture</a><a href="matiere.html">La matière</a><a href="structure.html">La structure</a><a href="outils.html">Les outils</a></div></div>
             <a href="aller-vers.html" class="active">Aller-vers</a>
             <a href="offre.html">Formations</a>
             <a href="questions-reponses.html">Q&amp;R</a>

@@ -7,18 +7,27 @@
     <meta name="description" content="Quatre pages pour comprendre comment Massajobs accompagne vers l'emploi : posture, matière, structure et outils.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16.png">
+    <link rel="apple-touch-icon" href="../assets/img/logo-massajobs.png">
 </head>
 <body>
 
 <header class="site-header">
     <div class="site-header__inner">
-        <a href="../index.html" class="site-logo"><strong>Massajobs</strong><small>Capitalisation</small></a>
+        <a href="../index.html" class="site-logo">
+            <img src="../assets/img/logo-massajobs.png" alt="" class="site-logo__img" aria-hidden="true">
+            <span class="site-logo__text">
+                <strong>Massajobs</strong>
+                <small>Capitalisation</small>
+            </span>
+        </a>
         <button class="menu-toggle" aria-label="Menu" onclick="document.querySelector('.site-nav').classList.toggle('open')">☰</button>
         <nav class="site-nav">
             <a href="../index.html">Accueil</a>
-            <a href="methode.html" class="active">La méthode</a>
+            <div class="nav-dropdown"><a href="methode.html" class="nav-dropdown__trigger active">La méthode</a><div class="nav-dropdown__menu"><a href="posture.html">Éclairer notre posture</a><a href="matiere.html">La matière</a><a href="structure.html">La structure</a><a href="outils.html">Les outils</a></div></div>
             <a href="aller-vers.html">Aller-vers</a>
             <a href="offre.html">Formations</a>
             <a href="questions-reponses.html">Q&amp;R</a>
@@ -45,50 +54,74 @@
 
 <section class="section">
     <div class="container-medium">
-        <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+        <div class="method-grid">
 
-            <a href="posture.html" class="card card--accent">
-                <div class="card__icon">🧘</div>
-                <h3 class="card__title">1. Éclairer notre posture</h3>
-                <p class="card__lead">
-                    Notre manière d'être avant notre manière de faire. Les valeurs et le positionnement qui fondent l'accompagnement :
-                    relation avant prestation, proposer sans imposer, pouvoir d'agir.
-                </p>
-                <span class="card__link">Lire</span>
+            <a href="posture.html" class="method-card">
+                <div class="method-card__image">
+                    <img src="../assets/img/pillar-posture.png" alt="" loading="lazy">
+                </div>
+                <div class="method-card__body">
+                    <span class="method-card__num">Étape 1</span>
+                    <h3 class="method-card__title">Éclairer notre posture</h3>
+                    <p class="method-card__lead">
+                        Notre manière d'être avant notre manière de faire. Les valeurs et le positionnement qui fondent l'accompagnement :
+                        relation avant prestation, proposer sans imposer, pouvoir d'agir.
+                    </p>
+                    <span class="method-card__link">Lire →</span>
+                </div>
             </a>
 
-            <a href="matiere.html" class="card card--primary">
-                <div class="card__icon">📖</div>
-                <h3 class="card__title">2. La matière de l'accompagnement</h3>
-                <p class="card__lead">
-                    Ce sur quoi nous travaillons avec la personne : le réel, le problème, le futur préférable,
-                    la demande, le contrat, l'action.
-                </p>
-                <span class="card__link">Lire</span>
+            <a href="matiere.html" class="method-card">
+                <div class="method-card__image">
+                    <img src="../assets/img/pillar-matiere.jpg" alt="" loading="lazy">
+                </div>
+                <div class="method-card__body">
+                    <span class="method-card__num">Étape 2</span>
+                    <h3 class="method-card__title">La matière de l'accompagnement</h3>
+                    <p class="method-card__lead">
+                        Ce sur quoi nous travaillons avec la personne : le réel, le problème, le futur préférable,
+                        la demande, le contrat, l'action.
+                    </p>
+                    <span class="method-card__link">Lire →</span>
+                </div>
             </a>
 
-            <a href="structure.html" class="card">
-                <div class="card__icon">🧭</div>
-                <h3 class="card__title">3. La structure de l'accompagnement</h3>
-                <p class="card__lead">
-                    Comment nous organisons les entretiens dans le temps : les 8 étapes d'une séance,
-                    les spécificités du premier entretien et de la fin d'accompagnement.
-                </p>
-                <span class="card__link">Lire</span>
+            <a href="structure.html" class="method-card">
+                <div class="method-card__image">
+                    <img src="../assets/img/pillar-structure.jpg" alt="" loading="lazy">
+                </div>
+                <div class="method-card__body">
+                    <span class="method-card__num">Étape 3</span>
+                    <h3 class="method-card__title">La structure de l'accompagnement</h3>
+                    <p class="method-card__lead">
+                        Comment nous organisons les entretiens dans le temps : les 8 étapes d'une séance,
+                        les spécificités du premier entretien et de la fin d'accompagnement.
+                    </p>
+                    <span class="method-card__link">Lire →</span>
+                </div>
             </a>
 
-            <a href="outils.html" class="card">
-                <div class="card__icon">🛠️</div>
-                <h3 class="card__title">4. Les outils de l'accompagnement</h3>
-                <p class="card__lead">
-                    Les techniques et grilles concrètes que nous mobilisons en séance : écoute, méta-communication,
-                    reformulation, questionnement, échelles, valorisation.
-                </p>
-                <span class="card__link">Lire</span>
+            <a href="outils.html" class="method-card">
+                <div class="method-card__image">
+                    <img src="../assets/img/pillar-outils.jpg" alt="" loading="lazy">
+                </div>
+                <div class="method-card__body">
+                    <span class="method-card__num">Étape 4</span>
+                    <h3 class="method-card__title">Les outils de l'accompagnement</h3>
+                    <p class="method-card__lead">
+                        Les techniques et grilles concrètes que nous mobilisons en séance : écoute, méta-communication,
+                        reformulation, questionnement, échelles, valorisation.
+                    </p>
+                    <span class="method-card__link">Lire →</span>
+                </div>
             </a>
 
         </div>
 
+        <div class="callout callout--idea" style="margin-top: var(--space-7);">
+            <div class="callout__title">💡 Comment lire ces pages&nbsp;?</div>
+            <p>L'ordre proposé suit une progression logique — du fondement (la posture) jusqu'à la technique (les outils).
+            Mais chaque page est conçue pour être lue de manière autonome. Vous pouvez piocher au gré de vos questions du moment.</p>
         </div>
     </div>
 </section>

@@ -6,18 +6,27 @@
     <title>Les outils de l'accompagnement — Massajobs</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16.png">
+    <link rel="apple-touch-icon" href="../assets/img/logo-massajobs.png">
 </head>
 <body>
 
 <header class="site-header">
     <div class="site-header__inner">
-        <a href="../index.html" class="site-logo"><strong>Massajobs</strong><small>Capitalisation</small></a>
+        <a href="../index.html" class="site-logo">
+            <img src="../assets/img/logo-massajobs.png" alt="" class="site-logo__img" aria-hidden="true">
+            <span class="site-logo__text">
+                <strong>Massajobs</strong>
+                <small>Capitalisation</small>
+            </span>
+        </a>
         <button class="menu-toggle" onclick="document.querySelector('.site-nav').classList.toggle('open')">☰</button>
         <nav class="site-nav">
             <a href="../index.html">Accueil</a>
-            <a href="methode.html" class="active">La méthode</a>
+            <div class="nav-dropdown"><a href="methode.html" class="nav-dropdown__trigger active">La méthode</a><div class="nav-dropdown__menu"><a href="posture.html">Éclairer notre posture</a><a href="matiere.html">La matière</a><a href="structure.html">La structure</a><a href="outils.html">Les outils</a></div></div>
             <a href="aller-vers.html">Aller-vers</a>
             <a href="offre.html">Formations</a>
             <a href="questions-reponses.html">Q&amp;R</a>
@@ -38,55 +47,346 @@
 
 <div class="callout">
     <div class="callout__title">📖 De quoi parle cette page ?</div>
-    <p>Six grands outils, chacun avec apports théoriques et applications directes :</p>
-    <ol>
-        <li>L'écoute</li>
-        <li>La méta-communication</li>
-        <li>La reformulation et les reflets</li>
-        <li>Le questionnement</li>
-        <li>Les questions à échelle</li>
-        <li>La démarche de valorisation</li>
-    </ol>
-    <p>Une section bonus traite spécifiquement du fait de <strong>donner une information ou un conseil</strong>.</p>
+    <p>Cette page présente les principaux <strong>outils de l'accompagnement</strong> mobilisés dans nos entretiens à Massajobs. Elle est organisée en six sections : l'écoute, la méta-communication, la reformulation, le questionnement, les questions à échelle et la démarche de valorisation. Chaque section combine apports théoriques et outils directement utilisables en situation.</p>
 </div>
 
-<h2>1. L'écoute</h2>
+<details class="section-toggle">
+<summary><h2 id="ecoute">1. L'écoute</h2></summary>
 
-<blockquote class="pull-quote">
-    L'écoute n'est pas innée : elle s'acquiert par l'apprentissage.
-    <cite>Françoise Kourilsky</cite>
-</blockquote>
+<details class="section-toggle">
+<summary><h3>Écoute active, écoute réflexive</h3></summary>
+<div class="details__body">
 
-<p>Massajobs vise une <strong>« écoute réflexive »</strong> (Rosengren) qui part du principe que la personne en sait plus que quiconque sur ce qui la concerne. Cela exige d'abord un silence intérieur de l'accompagnateur, puis un questionnement, et enfin éventuellement l'apport de son propre savoir <em>comme alternative et non comme vérité</em>.</p>
+<p>Savoir écouter l'autre est l'une des principales habiletés à développer dans la posture de l'accompagnateur. Comme le rappelle Kourilsky <a href="#ref-1-1">(1)</a>, <span class="hl">« l'écoute n'est pas innée : elle s'acquiert par l'apprentissage »</span>. C'est une compétence à développer.</p>
 
-<h3>Les 6 attitudes d'écoute (Porter) et leurs effets</h3>
+<p>Dans nos accompagnements, nous visons une <strong>« écoute réflexive »</strong> au sens où l'entend Rosengren <a href="#ref-1-2">(2)</a>. Selon lui, il s'agit d'« une façon de penser qui cherche à comprendre ce que la personne a à dire et qui s'intéresse avec respect à sa sagesse ».</p>
+
+<p>Cette approche part du principe que la personne en sait plus que quiconque sur ce qui la concerne. Elle commence à connaître son objectif, sait ce qu'elle a déjà tenté, dispose d'informations sur son environnement et sur ses propres ressources internes. L'accompagnateur s'efforce de mobiliser ces savoirs avant tout chez la personne accompagnée.</p>
+
+<ol>
+    <li><strong>L'accompagnateur doit « faire taire » son propre cadre de référence</strong>, pour être réellement à l'écoute de celui de la personne et de ce qu'elle vit (référence Philippe Bigot <a href="#ref-1-3">(3)</a>).</li>
+    <li><strong>Dans un second temps viendra celui des questions et des interventions</strong>, pour aider la personne à construire une vision du monde différente, sans en imposer une.</li>
+    <li>Dans un troisième temps, le savoir et la vision du monde de l'accompagnateur peuvent être mobilisés non pour s'imposer, mais pour offrir des alternatives et co-construire avec la personne un savoir de situation adapté.</li>
+</ol>
+
+<div class="callout callout--idea">
+    <div class="callout__title">💡 À retenir</div>
+    <p>Nous avons donc vu que l'écoute exige d'abord un silence intérieur de l'accompagnateur, puis un questionnement, et enfin éventuellement l'apport de son propre savoir <em>comme alternative et non comme vérité</em>.</p>
+</div>
+
+<p>Par ailleurs, pour bien écouter, il est utile de connaître les principales attitudes d'écoute possibles. Porter <a href="#ref-1-4">(4)</a> en a identifié six. Le tableau suivant croise ces six attitudes avec les « impasses relationnelles » identifiées par Gordon — la reformulation, attitude clé de l'écoute active, est absente chez Gordon car elle n'y constitue pas une impasse.</p>
+
 <div class="table-wrapper">
 <table>
-    <thead><tr><th>Attitude</th><th>Effet positif</th><th>Effet négatif</th></tr></thead>
+    <thead><tr><th>Attitude d'écoute (Porter)</th><th>Impasses relationnelles (Gordon)</th></tr></thead>
     <tbody>
-        <tr><td><strong>Reformulation</strong></td><td>Renforce la relation, permet de se réentendre</td><td>Crispe si mécanique (perroquet)</td></tr>
-        <tr><td><strong>Enquête</strong></td><td>Comprendre le contexte, débloquer les angles morts</td><td>Indiscrétion ressentie</td></tr>
-        <tr><td><strong>Soutien-Compréhension</strong></td><td>Sentiment d'être moins seul</td><td>Peut bloquer l'action si complaisant</td></tr>
-        <tr><td><strong>Interprétation</strong></td><td>Faire émerger des sous-entendus</td><td>Dépendance, contrainte à adopter notre vision</td></tr>
-        <tr><td><strong>Décision-Conseil</strong></td><td>« Mettre le pied à l'étrier »</td><td>Dépendance, inhibition</td></tr>
-        <tr><td><strong>Évaluation-Jugement</strong></td><td>Référence externe pour se positionner</td><td>Ferme le dialogue, suscite la colère</td></tr>
+        <tr><td><strong>Reformulation</strong></td><td><em>(absente — non-impasse)</em></td></tr>
+        <tr><td><strong>Enquête</strong></td><td>Questionner ou demander des précisions ou des preuves</td></tr>
+        <tr><td><strong>Soutien – Compréhension</strong></td><td>Réassurer, manifester sa sympathie ou consoler</td></tr>
+        <tr><td><strong>Interprétation</strong></td><td>Interpréter ou analyser</td></tr>
+        <tr><td><strong>Décision – Conseil</strong></td><td>Ordonner, diriger, commander · Mettre en garde, menacer · Donner des conseils, suggérer des solutions · Persuader par la logique ou l'argumentation · Dire ce qu'on devrait faire, moraliser</td></tr>
+        <tr><td><strong>Évaluation – Jugement</strong></td><td>Manifester son accord, approuver, féliciter · Manifester son désaccord, juger, critiquer, blâmer · Faire honte, ridiculiser, étiqueter</td></tr>
+        <tr><td><em>(non listée chez Porter)</em></td><td>Laisser tomber, distraire, faire de l'humour, changer de sujet (attitude d'évitement)</td></tr>
     </tbody>
 </table>
 </div>
 
-<p>De manière générale, <strong>l'écoute « active » privilégie l'attitude de reformulation</strong>.</p>
+<p><span class="hl">De manière générale, l'écoute dite « active » privilégie l'attitude de reformulation.</span></p>
 
-<h3>Trois finalités de l'écoute</h3>
-<ol>
-    <li><strong>Créer la relation</strong> — facteur déterminant du succès</li>
-    <li><strong>Reconnaître l'autre dans sa singularité</strong></li>
-    <li><strong>Favoriser ses apprentissages</strong></li>
-</ol>
+<p>Porter propose également de situer ces attitudes selon leur degré de focalisation (sur soi ou sur l'autre) et leur niveau d'influence sur l'interlocuteur :</p>
 
-<blockquote class="pull-quote">
-    Ils ne savent pas qu'ils savent — car ils n'ont pas encore produit de discours à ce sujet, ou parce qu'autrui — par une écoute attentive — n'a pas encore donné de crédit à ce discours.
-    <cite>Yann Le Bossé</cite>
-</blockquote>
+<div class="table-wrapper">
+<table>
+    <thead><tr><th>Attitude</th><th>Focalisation sur soi</th><th>Focalisation sur l'autre</th><th>Niveau d'influence</th></tr></thead>
+    <tbody>
+        <tr><td>Reformulation</td><td>1</td><td>6</td><td>Non-influence</td></tr>
+        <tr><td>Enquête</td><td>2</td><td>5</td><td>—</td></tr>
+        <tr><td>Soutien – Compréhension</td><td>3</td><td>4</td><td>—</td></tr>
+        <tr><td>Interprétation</td><td>4</td><td>3</td><td>—</td></tr>
+        <tr><td>Décision – Conseil</td><td>5</td><td>2</td><td>—</td></tr>
+        <tr><td>Évaluation – Jugement</td><td>6</td><td>1</td><td>Forte influence</td></tr>
+    </tbody>
+</table>
+</div>
+
+<p>Chacune de ces attitudes peut produire des effets positifs ou négatifs selon la manière dont elle est mobilisée :</p>
+
+<details>
+<summary>🔄 <strong>Reformulation</strong></summary>
+<div class="details__body">
+<p><em>Restituer le plus fidèlement possible la pensée et les sentiments de l'interlocuteur.</em></p>
+<div class="callout callout--tip">
+<div class="callout__title">🟢 Effets positifs</div>
+<ul>
+<li>Renforce la relation par le sentiment d'être considéré et reconnu</li>
+<li>Permet à l'autre de se réentendre</li>
+</ul>
+</div>
+<div class="callout callout--warning">
+<div class="callout__title">🔴 Effet négatif</div>
+<ul>
+<li>Utilisée de manière mécanique, elle peut crisper l'interlocuteur, agacé de se retrouver face à un simple perroquet.</li>
+</ul>
+</div>
+</div>
+</details>
+
+<details>
+<summary>🔍 <strong>Enquête</strong></summary>
+<div class="details__body">
+<p><em>Recherche d'informations précises dans le discours de l'interlocuteur.</em></p>
+<div class="callout callout--tip">
+<div class="callout__title">🟢 Effets positifs</div>
+<ul>
+<li>Permet de comprendre le contexte</li>
+<li>Permet d'aller questionner les angles morts</li>
+<li>Donne à revoir, fait revivre des scènes de vie pour en tirer des apprentissages</li>
+</ul>
+</div>
+<div class="callout callout--warning">
+<div class="callout__title">🔴 Effets négatifs</div>
+<ul>
+<li>Peut donner l'impression de s'immiscer dans la vie de l'autre, d'être indiscret</li>
+<li>Une recherche trop détaillée peut paraître longue et fastidieuse</li>
+</ul>
+</div>
+</div>
+</details>
+
+<details>
+<summary>🫖 <strong>Soutien – Compréhension</strong></summary>
+<div class="details__body">
+<p><em>Être particulièrement à l'écoute des ressentis et des émotions face à la situation.</em></p>
+<div class="callout callout--tip">
+<div class="callout__title">🟢 Effets positifs</div>
+<ul>
+<li>Permet d'être à l'écoute des ressentis et des émotions, ce qui peut être nécessaire pour passer d'une réaction émotionnelle à une réflexion plus ouverte</li>
+<li>Permet à l'autre de se sentir moins seul face à son vécu</li>
+</ul>
+</div>
+<div class="callout callout--warning">
+<div class="callout__title">🔴 Effets négatifs</div>
+<ul>
+<li>Peut bloquer l'action si le soutien devient complaisant</li>
+<li>Peut créer un sentiment de honte lié à une pitié perçue par l'interlocuteur</li>
+</ul>
+</div>
+</div>
+</details>
+
+<details>
+<summary>🔮 <strong>Interprétation</strong></summary>
+<div class="details__body">
+<p><em>Renvoie à l'autre une signification possible de ce qu'il vient de dire.</em></p>
+<div class="callout callout--tip">
+<div class="callout__title">🟢 Effets positifs</div>
+<ul>
+<li>Faire émerger des sous-entendus pour clarifier le sens</li>
+<li>Faire émerger des éléments dont l'interlocuteur n'est pas conscient et lui offrir une autre vision du monde</li>
+</ul>
+</div>
+<div class="callout callout--warning">
+<div class="callout__title">🔴 Effets négatifs</div>
+<ul>
+<li>Mal utilisée, peut mettre l'interlocuteur en situation de dépendance, de frustration ou d'incompréhension</li>
+<li>Peut contraindre l'autre à adopter notre vision du monde</li>
+</ul>
+</div>
+</div>
+</details>
+
+<details>
+<summary>📌 <strong>Décision – Conseil</strong></summary>
+<div class="details__body">
+<p><em>Dire à l'interlocuteur ce qu'il doit faire.</em></p>
+<div class="callout callout--tip">
+<div class="callout__title">🟢 Effet positif</div>
+<ul>
+<li>Pour les personnes peu autonomes, peut permettre de « mettre le pied à l'étrier » et de donner de l'élan</li>
+</ul>
+</div>
+<div class="callout callout--warning">
+<div class="callout__title">🔴 Effets négatifs</div>
+<ul>
+<li>Risque de créer de la dépendance</li>
+<li>Peut créer de l'inhibition si la décision n'est pas acceptée</li>
+</ul>
+</div>
+</div>
+</details>
+
+<details>
+<summary>⚖️ <strong>Évaluation – Jugement</strong></summary>
+<div class="details__body">
+<p><em>Émettre un jugement de valeur sur ce que dit l'interlocuteur.</em></p>
+<div class="callout callout--tip">
+<div class="callout__title">🟢 Effet positif</div>
+<ul>
+<li>Permet à l'autre de se positionner par rapport à une référence externe et d'éventuellement ajuster ses représentations</li>
+</ul>
+</div>
+<div class="callout callout--warning">
+<div class="callout__title">🔴 Effets négatifs</div>
+<ul>
+<li>Peut fermer le dialogue</li>
+<li>Peut amener l'intervenant à s'ériger en arbitre du bien et du mal</li>
+<li>Peut susciter frustration et colère en cas d'évaluation négative</li>
+</ul>
+</div>
+</div>
+</details>
+
+<div class="callout callout--tip">
+<div class="callout__title">🛠️ Comment réduire les effets négatifs des différentes postures d'écoute ?</div>
+
+<p>Pour les différentes attitudes, un moyen efficace de réduire les risques consiste à recourir à la <strong><em>méta-communication</em></strong>, c'est-à-dire à communiquer sur notre manière de communiquer.</p>
+<p><em>« Je tente une interprétation de ce que vous me dites ; je peux me tromper. À vous de me dire si cela correspond à votre situation : … »</em></p>
+
+<p><strong>Pour les questions d'enquête</strong> — la technique des casquettes 🧢 :</p>
+<p><em>« Je vais mettre ma casquette d'analyste vidéo, comme dans le sport professionnel, pour comprendre ce qui a été fait dans cette situation. »</em><br>
+<em>« Je vais vous poser un certain nombre de questions pour éclairer la situation. Dites-moi si certaines vous étonnent. Ça vous va ? »</em></p>
+
+<p><strong>Pour le soutien-compréhension</strong> — se décentrer :</p>
+<p><em>« J'accompagne un certain nombre de personnes, et vous n'êtes pas le seul à rencontrer ce problème… »</em></p>
+
+<p><strong>Pour l'évaluation</strong> — se décentrer via des repères externes :</p>
+<p><em>« Pour quelqu'un qui trouve long de ne pas trouver de travail après un mois de recherche, on peut rappeler qu'en France, il faut en moyenne sept mois entre le début des démarches et l'obtention d'un emploi. »</em> Disposer d'un élément de comparaison solide aide la personne à se situer plus objectivement.</p>
+
+<p><strong>Pour le jugement</strong> — s'abstenir :</p>
+<p><em>« Mon avis a une valeur relative ; j'aimerais d'abord connaître le vôtre… »</em> · <em>« Vous me demandez mon avis, mais que pensez-vous, vous ? »</em></p>
+
+<p><strong>Pour l'interprétation et la décision-conseil</strong> : nous vous proposons d'aller voir la section « Donner une information ou un conseil ».</p>
+
+<p><strong>Pour donner son avis</strong> :</p>
+<p><em>« Vous me demandez mon avis : il est toujours prudent d'en recueillir plusieurs dans une situation. À qui d'autre pourriez-vous demander ? »</em><br>
+<em>« Par ailleurs, mon avis a une valeur relative : il repose sur mon expérience, non sur la vôtre. Le voici… »</em></p>
+</div>
+
+</div>
+</details>
+
+<details class="section-toggle">
+<summary><h3>Qu'est-ce qu'on recherche à travers l'écoute ?</h3></summary>
+<div class="details__body">
+
+<p>Les objectifs de l'écoute évoqués par Porter ont été rappelés dans la section précédente. Au-delà, plusieurs finalités majeures peuvent être identifiées :</p>
+
+<ul>
+    <li><strong>créer la relation</strong>,</li>
+    <li><strong>reconnaître l'autre dans sa singularité</strong>,</li>
+    <li><strong>favoriser ses apprentissages</strong>.</li>
+</ul>
+
+<p>C'est grâce à la qualité de la relation que l'accompagnement peut produire ses effets. L'étude de Lambert le rappelle : les facteurs relationnels représentent une part déterminante du changement. L'écoute est donc une compétence fondamentale. Rosengren définit d'ailleurs l'écoute comme un moyen « d'établir la relation et de créer un élan vers des directions productives » <a href="#ref-1-2">(2)</a>.</p>
+
+<p>Par ailleurs, l'écoute offre une <span class="hl">véritable reconnaissance</span> à la personne accompagnée : elle se sent considérée, prise au sérieux, et peut commencer à se vivre comme auteur de sa propre vie.</p>
+
+<blockquote class="pull-quote">La reconnaissance de l'autre est sagesse, la connaissance de l'autre est illusoire.<cite>Françoise Kourilsky <a href="#ref-1-1">(1)</a></cite></blockquote>
+
+<blockquote class="pull-quote">Ils ne savent pas qu'ils savent — car ils n'ont pas encore produit de discours à ce sujet, ou parce qu'autrui, par une écoute attentive, n'a pas encore donné de crédit à ce discours.<cite>Yann Le Bossé <a href="#ref-1-5">(5)</a></cite></blockquote>
+
+<p>Écouter l'autre, c'est donc favoriser à la fois la relation, la reconnaissance et l'émergence d'un savoir propre à la personne. Cela appelle de notre part une vigilance constante sur le processus d'écoute.</p>
+
+</div>
+</details>
+
+<details class="section-toggle">
+<summary><h3>Qu'est-ce que l'on écoute ?</h3></summary>
+<div class="details__body">
+
+<p>Lorsqu'une personne parle, son discours mobilise plusieurs registres : ce qu'elle ressent, ce qu'elle perçoit, ce qu'elle fait, ce qu'elle pense. Le tableau ci-dessous reprend ces différentes dimensions du vécu (illustrées ici par l'exemple d'une personne dans un bus bondé).</p>
+
+<div class="callout callout--tip">
+<div class="callout__title">🧭 Outil de repérage — Les différentes dimensions du vécu</div>
+<p>Ce tableau aide à identifier sur quel registre porte le discours de la personne accompagnée, pour adapter la nature de vos relances.</p>
+</div>
+
+<div class="table-wrapper">
+<table>
+    <thead><tr><th>Type de vécu</th><th>Définition</th><th>Détails</th><th>Exemple</th></tr></thead>
+    <tbody>
+        <tr>
+            <td><strong>Vécu émotionnel</strong></td>
+            <td>Ce que je ressens</td>
+            <td>Ressentis physiques · Dialogues internes</td>
+            <td><em>« J'ai peur de ne pas trouver de place. Je me sens tendu. »</em></td>
+        </tr>
+        <tr>
+            <td><strong>Vécu sensoriel</strong></td>
+            <td>Ce que je sens par les 5 sens</td>
+            <td>Vue, ouïe, toucher, goût, odorat</td>
+            <td><em>« Je sens une forte odeur de transpiration ; mon bras touche celui d'un voisin. »</em></td>
+        </tr>
+        <tr>
+            <td><strong>Vécu opérationnel</strong></td>
+            <td>Ce que je fais</td>
+            <td>Comportement et action observables</td>
+            <td><em>« Je pose mon sac à mes pieds et avance vers le centre du bus. »</em></td>
+        </tr>
+        <tr>
+            <td><strong>Vécu conceptuel et réflexif</strong></td>
+            <td>Ce qui fait sens pour moi et la manière dont j'interprète la situation</td>
+            <td>Croyances, valeurs, hypothèses, relations de cause à effet, explications, jugements (bien/mal, juste/pas juste)</td>
+            <td><em>« Je pense que le bus est plein parce que les gens n'avancent pas vers le centre : ils ont peur de ne plus pouvoir sortir. C'est dommage : on pourrait mieux s'organiser. »</em></td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+<p>Pierre Vermersch <a href="#ref-1-6">(6)</a> propose de prêter attention aux contenus d'aperception, c'est-à-dire à la manière dont la personne perçoit, se représente et donne sens à la situation qu'elle a vécue, au-delà des seuls comportements mis en œuvre.</p>
+
+<p>Il propose également de considérer ces registres comme interconnectés : nos émotions colorent nos perceptions, nos perceptions orientent nos actions, nos actions activent nos croyances (effet Pygmalion), etc. Écouter ces différents registres, c'est se donner la possibilité de relancer la personne sur le plan le plus utile à un moment donné.</p>
+
+</div>
+</details>
+
+<details class="section-toggle">
+<summary><h3>Les différents types d'écoute</h3></summary>
+<div class="details__body">
+
+<p>Kourilsky <a href="#ref-1-1">(1)</a> distingue trois types d'écoute, complémentaires : le langage verbal, le langage non verbal et le cheminement mental de la personne.</p>
+
+<div class="callout">
+<div class="callout__title">🗣️ Langage verbal</div>
+<p>Les mots et le contenu explicite du message.</p>
+</div>
+
+<div class="callout">
+<div class="callout__title">👀 Langage non verbal</div>
+<p>L'intonation, le volume, le rythme et les inflexions de la voix ; les gestes, postures, expressions faciales ; la respiration et les mouvements oculaires.</p>
+</div>
+
+<div class="callout">
+<div class="callout__title">🧠 Cheminement mental</div>
+<p>Les déductions, suppositions, interprétations, valeurs, croyances, métaphores et schémas internes de la personne.</p>
+</div>
+
+<p>L'observation du non verbal apporte une matière précieuse au questionnement : un visage qui se ferme, une respiration qui s'accélère, un regard qui se détourne révèlent quelque chose de la relation et du vécu.</p>
+
+<p>Par ailleurs, repérer la <strong>congruence</strong> (ou son absence) entre verbal et non verbal permet de comprendre si le discours et le ressenti sont alignés.</p>
+
+<blockquote class="pull-quote">Le coaching est un acte de communication et nous savons depuis longtemps que cette dernière n'est pas seulement verbale. [...] Par l'observation, le produit de celle-ci devient un matériau à partir duquel le coach génère son questionnement.<cite>Philippe Bigot <a href="#ref-1-3">(3)</a></cite></blockquote>
+
+<p>Vincent Lenhardt <a href="#ref-1-7">(7)</a> ajoute une <strong>troisième écoute</strong> : l'écoute de ce qui se passe en soi en tant qu'accompagnateur, des résonances que provoque le récit de la personne, des associations avec d'autres situations.</p>
+
+<p>L'écoute demeure le geste central de notre métier. Sa qualité conditionne celle des outils mobilisés par la suite, que nous présentons dans la section suivante.</p>
+
+</div>
+</details>
+
+<div class="callout">
+<div class="callout__title">📔 Références bibliographiques de la section</div>
+<p id="ref-1-1">1 — Kourilsky, F. (2022). <em>Du désir au plaisir de changer — 5e éd. : Coaching et management du changement</em>. Dunod.</p>
+<p id="ref-1-2">2 — Rosengren, D. B. (2021). <em>Grand manuel de l'Entretien motivationnel : Pratique et savoir-faire</em>. InterEditions.</p>
+<p id="ref-1-3">3 — Bigot, P. (2014). <em>Le coaching orienté solution : Cessez de résoudre des problèmes, construisez des solutions</em>. Eyrolles.</p>
+<p id="ref-1-4">4 — Cauden, I., &amp; Cuisiniez, F. (2012). <em>La Boîte à outils des formateurs — 2e édition</em>. Dunod.</p>
+<p id="ref-1-5">5 — Bossé, Y. L. (2016). <em>Soutenir sans prescrire : Aperçu synoptique de l'approche centrée sur le développement du pouvoir d'agir des personnes et des collectivités (DPA-PC)</em>.</p>
+<p id="ref-1-6">6 — Vermersch, P. (2019). <em>L'entretien d'explicitation</em>. ESF Sciences Humaines.</p>
+<p id="ref-1-7">7 — Lenhardt, V. (2023). <em>Mes 10 stratégies de coaching : Pour une co-construction de la liberté et de la responsabilité</em>.</p>
+</div>
+
+</details>
+
 
 <h2>2. La méta-communication</h2>
 

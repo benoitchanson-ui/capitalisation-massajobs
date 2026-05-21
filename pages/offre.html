@@ -6,18 +6,27 @@
     <title>Formations et supervision — Massajobs</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16.png">
+    <link rel="apple-touch-icon" href="../assets/img/logo-massajobs.png">
 </head>
 <body>
 
 <header class="site-header">
     <div class="site-header__inner">
-        <a href="../index.html" class="site-logo"><strong>Massajobs</strong><small>Capitalisation</small></a>
+        <a href="../index.html" class="site-logo">
+            <img src="../assets/img/logo-massajobs.png" alt="" class="site-logo__img" aria-hidden="true">
+            <span class="site-logo__text">
+                <strong>Massajobs</strong>
+                <small>Capitalisation</small>
+            </span>
+        </a>
         <button class="menu-toggle" aria-label="Menu" onclick="document.querySelector('.site-nav').classList.toggle('open')">☰</button>
         <nav class="site-nav">
             <a href="../index.html">Accueil</a>
-            <a href="methode.html">La méthode</a>
+            <div class="nav-dropdown"><a href="methode.html" class="nav-dropdown__trigger">La méthode</a><div class="nav-dropdown__menu"><a href="posture.html">Éclairer notre posture</a><a href="matiere.html">La matière</a><a href="structure.html">La structure</a><a href="outils.html">Les outils</a></div></div>
             <a href="aller-vers.html">Aller-vers</a>
             <a href="offre.html" class="active">Formations</a>
             <a href="questions-reponses.html">Q&amp;R</a>
@@ -37,77 +46,85 @@
 <div class="reading">
 
 <div class="callout callout--idea">
-    <div class="callout__title">🎓 Notre avantage</div>
+    <div class="callout__title">Notre avantage</div>
+    <p>Nous formons les professionnels de l'accompagnement qui veulent passer d'une logique d'expertise à une logique de pouvoir d'agir — avec des contenus ancrés dans le réel.</p>
     <p><strong>Nous enseignons ce que nous pratiquons, chaque jour, sur le terrain.</strong></p>
 </div>
 
-<h2>🏫 Formation collective</h2>
+<article class="offer-block">
+    <span class="kicker">Format 1</span>
+    <h2>Formation collective</h2>
+    <p class="offer-block__lead">Modules conçus sur mesure et adaptables à votre contexte, votre public et vos contraintes organisationnelles. Pédagogie active fondée sur la mise en situation.</p>
 
-<h3>Thèmes principaux</h3>
-<ul>
-    <li>Développement du pouvoir d'agir des personnes et des collectivités (DPA)</li>
-    <li>L'écoute active</li>
-    <li>L'art du questionnement</li>
-    <li>La posture d'accompagnement</li>
-    <li>Régulation stratégique des émotions</li>
-    <li>Le public peu motivé ou en non-demande</li>
-    <li>Techniques de recherche d'emploi (TRE)</li>
-    <li>L'aller-vers</li>
-</ul>
-
-<h3>Modalités pédagogiques</h3>
-<ul>
-    <li>Jeux de rôle</li>
-    <li>Exercices de théâtre</li>
-    <li>Analyse vidéo</li>
-</ul>
-
-<div class="callout">
-    <div class="callout__title">🏆 Quelques références</div>
+    <h3>Thèmes principaux</h3>
     <ul>
-        <li><strong>Apprentis d'Auteuil</strong> — Formation Aller-vers et DPA (2 jours) au niveau national Impact Jeunes · Formation Pôle Insertion Marseille</li>
-        <li><strong>Apprentis d'Auteuil Occitanie</strong> — Découverte DPA et Aller-vers</li>
-        <li><strong>Groupe SOS</strong> — Formation Aller-vers, DPA et TRE pour les 5 coordinatrices de parcours du programme Odyssée</li>
-        <li><strong>La Varappe</strong> — Formation Aller-vers, DPA et TRE pour les programmes Grandir, You Go Girls et Les Bons Bails</li>
-        <li><strong>Wake up Café, Main Forte, LinkedOut</strong> — Formation découverte 2 jours sur le DPA</li>
-        <li><strong>BimBamJob</strong> — Intervention régulière par promotion pour l'école des CIP (DPA + Régulation stratégique des émotions)</li>
-        <li><strong>La Maison de Marthe et Marie, Lazare</strong> — Formation sur les postures d'accompagnement</li>
-        <li><strong>École de la Deuxième Chance Marseille</strong> — Découverte du DPA et Régulation stratégique des émotions</li>
+        <li>Développement du pouvoir d'agir des personnes et des collectivités (DPA)</li>
+        <li>L'écoute active</li>
+        <li>L'art du questionnement</li>
+        <li>La posture d'accompagnement</li>
+        <li>Régulation stratégique des émotions</li>
+        <li>Le public peu motivé ou en non-demande</li>
+        <li>Techniques de recherche d'emploi (TRE)</li>
+        <li>L'aller-vers</li>
     </ul>
-</div>
 
-<h2>👥 Groupe d'Analyse de Pratique Professionnelle (GAPP)</h2>
-
-<p><strong>Principe :</strong> utiliser la force du groupe pour travailler sur des problématiques concrètes rencontrées par les professionnels dans leur quotidien. Un cadre méthodologique structure les échanges.</p>
-<p><strong>Format :</strong> demi-journée (0,5 jour) — rythme mensuel recommandé.</p>
-
-<div class="callout">
-    <div class="callout__title">🏆 Références GAPP</div>
+    <h3>Modalités pédagogiques</h3>
     <ul>
-        <li><strong>Groupe SOS</strong> — Animation d'un GAPP mensuel pendant 1,5 an (juin 2021 – février 2023) pour les coordinatrices de parcours d'Odyssée</li>
-        <li><strong>La Varappe</strong> — Animation d'un GAPP mensuel pendant 3 ans (2021–2023) pour les révélateurs de talents de Grandir et Les Bons Bails</li>
-        <li><strong>Le Rocher de Marseille</strong> — Animation d'un GAPP mensuel avec les équipes</li>
-        <li><strong>L'Accélérateur & Le Propulseur (EITI StaffMe)</strong> — Animation d'un GAPP mensuel (juillet à décembre 2024)</li>
-        <li><strong>La Touline</strong> (dispositif MNA et sortants de l'ASE d'Apprentis d'Auteuil) — depuis 2025</li>
-        <li><strong>Apprentis d'Auteuil</strong> — Manager, établissement Saint-Louis — depuis 2026</li>
+        <li>Jeux de rôle</li>
+        <li>Exercices de théâtre</li>
+        <li>Analyse vidéo</li>
     </ul>
-</div>
 
-<h2>🔍 Supervision individuelle</h2>
-<p><strong>Modalités :</strong></p>
-<ul>
-    <li>Double-écoute d'entretien</li>
-    <li>Travail de problématique professionnelle en individuel</li>
-    <li>Analyse de scripts ou de vidéo d'entretien</li>
-</ul>
+    <div class="callout">
+        <div class="callout__title">Quelques références</div>
+        <ul>
+            <li><strong>Apprentis d'Auteuil</strong> — Formation Aller-vers et DPA (2 jours) au niveau national Impact Jeunes · Formation Pôle Insertion Marseille</li>
+            <li><strong>Apprentis d'Auteuil Occitanie</strong> — Découverte DPA et Aller-vers</li>
+            <li><strong>Groupe SOS</strong> — Formation Aller-vers, DPA et TRE pour les 5 coordinatrices de parcours du programme Odyssée</li>
+            <li><strong>La Varappe</strong> — Formation Aller-vers, DPA et TRE pour les programmes Grandir, You Go Girls et Les Bons Bails</li>
+            <li><strong>Wake up Café, Main Forte, LinkedOut</strong> — Formation découverte 2 jours sur le DPA</li>
+            <li><strong>BimBamJob</strong> — Intervention régulière par promotion pour l'école des CIP (DPA + gestion des émotions)</li>
+            <li><strong>La Maison de Marthe et Marie, Lazare</strong> — Formation sur les postures d'accompagnement</li>
+            <li><strong>École de la Deuxième Chance Marseille</strong> — Découverte du DPA et Régulation stratégique des émotions</li>
+        </ul>
+    </div>
+</article>
 
-<div class="callout">
-    <div class="callout__title">🏆 Références Supervision</div>
+<article class="offer-block">
+    <span class="kicker">Format 2</span>
+    <h2>Analyse de la pratique — collective et individuelle</h2>
+    <p class="offer-block__lead">Espaces réguliers pour travailler ses situations professionnelles, en groupe ou en individuel. Deux dispositifs complémentaires.</p>
+
+    <h3>Collective — GAPP (Groupe d'Analyse de Pratique Professionnelle)</h3>
+    <p><strong>Principe :</strong> utiliser la force du groupe pour travailler sur des problématiques concrètes rencontrées par les professionnels dans leur quotidien. Un cadre méthodologique structure les échanges.</p>
+    <p><strong>Format :</strong> demi-journée (0,5 jour) — rythme mensuel recommandé.</p>
+
+    <h3>Individuelle — Supervision</h3>
+    <p><strong>Modalités :</strong></p>
     <ul>
-        <li><strong>Groupe SOS</strong> — Supervision individuelle des coordinatrices de parcours sur Odyssée</li>
-        <li><strong>La Varappe</strong> — Supervision individuelle des entraîneurs de talents (Grandir, Odyssée)</li>
+        <li>Double-écoute d'entretien</li>
+        <li>Travail de problématique professionnelle en individuel</li>
+        <li>Analyse de scripts ou de vidéo d'entretien</li>
     </ul>
-</div>
+
+    <div class="callout">
+        <div class="callout__title">Quelques références</div>
+        <p><strong>GAPP :</strong></p>
+        <ul>
+            <li><strong>Groupe SOS</strong> — Animation d'un GAPP mensuel pendant 1,5 an (juin 2021 – février 2023) pour les coordinatrices de parcours d'Odyssée</li>
+            <li><strong>La Varappe</strong> — Animation d'un GAPP mensuel pendant 3 ans (2021–2023) pour les révélateurs de talents de Grandir et Les Bons Bails</li>
+            <li><strong>Le Rocher de Marseille</strong> — Animation d'un GAPP mensuel avec les équipes</li>
+            <li><strong>L'Accélérateur &amp; Le Propulseur (EITI StaffMe)</strong> — Animation d'un GAPP mensuel (juillet à décembre 2024)</li>
+            <li><strong>La Touline</strong> (dispositif MNA et sortants de l'ASE d'Apprentis d'Auteuil) — depuis 2025</li>
+            <li><strong>Apprentis d'Auteuil</strong> — Manager, établissement Saint-Louis — depuis 2026</li>
+        </ul>
+        <p style="margin-top: var(--space-3);"><strong>Supervision :</strong></p>
+        <ul>
+            <li><strong>Groupe SOS</strong> — Supervision individuelle des coordinatrices de parcours sur Odyssée</li>
+            <li><strong>La Varappe</strong> — Supervision individuelle des entraîneurs de talents (Grandir, Odyssée)</li>
+        </ul>
+    </div>
+</article>
 
 <hr>
 
@@ -122,7 +139,7 @@
 <h3>Responsable formation</h3>
 <div style="background: var(--color-white); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: var(--space-5); margin-top: var(--space-3);">
     <h4 style="margin-top: 0; font-size: 1.25rem;">Benoît Chanson — Coach · Formateur · Superviseur</h4>
-    <p>Benoît Chanson est coach professionnel certifié, formateur et superviseur. Responsable pédagogique de Massajobs depuis 2016, il a développé et formalisé la méthode d'accompagnement de la structure. Il intervient aujourd'hui pour Massajobs et en externe pour accompagner dans le développement de leurs pratiques.</p>
+    <p>Benoît Chanson est coach professionnel certifié, formateur et superviseur. Responsable pédagogique de Massajobs depuis 2016, il a développé et formalisé la méthode d'accompagnement de la structure — celle-là même que vous retrouvez dans ce site. Il intervient aujourd'hui en externe pour accompagner les équipes d'autres structures dans le développement de leurs pratiques.</p>
     <p style="margin-bottom: 0;">
         📧 <a href="mailto:benoit.chanson@massajobs.org">benoit.chanson@massajobs.org</a><br>
         📞 06 65 79 95 27

@@ -14,10 +14,13 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png">
+    <link rel="apple-touch-icon" href="assets/img/logo-massajobs.png">
 </head>
 <body>
 
@@ -25,8 +28,11 @@
 <header class="site-header">
     <div class="site-header__inner">
         <a href="index.html" class="site-logo">
-            <strong>Massajobs</strong>
-            <small>Capitalisation</small>
+            <img src="assets/img/logo-massajobs.png" alt="" class="site-logo__img" aria-hidden="true">
+            <span class="site-logo__text">
+                <strong>Massajobs</strong>
+                <small>Capitalisation</small>
+            </span>
         </a>
 
         <button class="menu-toggle" aria-label="Ouvrir le menu" onclick="document.querySelector('.site-nav').classList.toggle('open')">
@@ -35,7 +41,7 @@
 
         <nav class="site-nav" aria-label="Menu principal">
             <a href="index.html" class="active">Accueil</a>
-            <a href="pages/methode.html">La méthode</a>
+            <div class="nav-dropdown"><a href="pages/methode.html" class="nav-dropdown__trigger">La méthode</a><div class="nav-dropdown__menu"><a href="pages/posture.html">Éclairer notre posture</a><a href="pages/matiere.html">La matière</a><a href="pages/structure.html">La structure</a><a href="pages/outils.html">Les outils</a></div></div>
             <a href="pages/aller-vers.html">Aller-vers</a>
             <a href="pages/offre.html">Formations</a>
             <a href="pages/questions-reponses.html">Q&amp;R</a>
@@ -48,78 +54,101 @@
 <section class="hero">
     <div class="hero__inner">
         <div class="hero__content">
-            <span class="hero__eyebrow">10 ans d'accompagnement à Marseille</span>
             <h1>Notre savoir-faire, <em>mis en mots</em>.</h1>
             <p class="hero__lead">
                 En 2025, Massajobs a fêté ses 10 ans de présence dans les quartiers de Marseille.
-                Pour l'occasion, nous avons voulu mettre en mots ce que nos pratiques quotidiennes.
-                Une invitation à entrer dans notre manière d'accompagner les personnes vers le travail dans les quartiers prioritaires.
+                Pour l'occasion, nous avons voulu mettre en mots ce que nous faisons, pourquoi nous le faisons, et comment.
+                Une invitation à entrer dans notre manière d'accompagner les personnes vers l'emploi.
             </p>
             <div class="hero__cta">
                 <a href="pages/methode.html" class="btn btn-primary btn-arrow">Découvrir la méthode</a>
                 <a href="pages/offre.html" class="btn btn-secondary">Se former avec nous</a>
             </div>
         </div>
-
-            </div>
-        </div>
     </div>
 </section>
 
-<!-- ==================== MAIN SECTIONS ==================== -->
+<!-- ==================== MAIN SECTIONS — 5 PILIERS ==================== -->
 <section class="section section-sand">
     <div class="container">
-        <div style="text-align: center; max-width: 640px; margin: 0 auto var(--space-6);">
+        <div style="text-align: center; max-width: 680px; margin: 0 auto var(--space-7);">
             <span class="kicker">Par où commencer ?</span>
-            <h2>Quatre portes d'entrée dans la méthode</h2>
+            <h2>Cinq portes d'entrée dans la méthode</h2>
             <p style="color: var(--color-text-muted);">
                 Cliquez sur l'une des thématiques pour explorer le contenu.
             </p>
         </div>
 
-        <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+        <div class="pillars">
 
-            <a href="pages/methode.html" class="card card--accent">
-                <div class="card__icon" aria-hidden="true">🧭</div>
-                <h3 class="card__title">L'accompagnement</h3>
-                <p class="card__lead">
-                    Posture, matière, structure et outils — quatre pages pour comprendre comment nous accompagnons,
-                    de la posture de fond jusqu'aux techniques d'entretien.
-                </p>
-                <div class="card__children">
-                    <a href="pages/posture.html">Éclairer notre posture</a>
-                    <a href="pages/matiere.html">La matière de l'accompagnement</a>
-                    <a href="pages/structure.html">La structure de l'accompagnement</a>
-                    <a href="pages/outils.html">Les outils de l'accompagnement</a>
+            <a href="pages/posture.html" class="pillar">
+                <div class="pillar__image">
+                    <img src="assets/img/pillar-posture.png" alt="" loading="lazy">
+                </div>
+                <div class="pillar__body">
+                    <span class="kicker">Posture</span>
+                    <h3 class="pillar__title">Éclairer la posture</h3>
+                    <p class="pillar__lead">
+                        Notre manière de nous tenir face à l'autre. Avant les techniques, c'est elle qui détermine la qualité de la relation : facteurs clés, obstacles, et nos rapports au pouvoir, au savoir, à l'action et au temps.
+                    </p>
+                    <span class="pillar__link">Lire la page →</span>
                 </div>
             </a>
 
-            <a href="pages/aller-vers.html" class="card card--primary">
-                <div class="card__icon" aria-hidden="true">👋</div>
-                <h3 class="card__title">L'aller-vers</h3>
-                <p class="card__lead">
-                    Comment nous sortons de nos bureaux pour aller au-devant des personnes les plus éloignées de l'emploi.
-                    Notre philosophie, notre posture et nos pratiques concrètes : porte-à-porte, déambulation, partenariats, accueil inconditionnel.
-                </p>
-                <span class="card__link">Lire la page</span>
+            <a href="pages/matiere.html" class="pillar">
+                <div class="pillar__image">
+                    <img src="assets/img/pillar-matiere.jpg" alt="" loading="lazy">
+                </div>
+                <div class="pillar__body">
+                    <span class="kicker">Matière</span>
+                    <h3 class="pillar__title">La matière de l'accompagnement</h3>
+                    <p class="pillar__lead">
+                        Ce que nous travaillons concrètement avec la personne : son cadre de référence, ses ressources cachées, ses motivations, son projet. Les contenus sur lesquels portent nos entretiens.
+                    </p>
+                    <span class="pillar__link">Lire la page →</span>
+                </div>
             </a>
 
-            <a href="pages/offre.html" class="card">
-                <div class="card__icon" aria-hidden="true">🎓</div>
-                <h3 class="card__title">Se former avec nous</h3>
-                <p class="card__lead">
-                    Formations, analyse de pratique et supervision : approfondissez ces approches avec votre équipe.
-                </p>
-                <span class="card__link">Découvrir l'offre</span>
+            <a href="pages/structure.html" class="pillar">
+                <div class="pillar__image">
+                    <img src="assets/img/pillar-structure.jpg" alt="" loading="lazy">
+                </div>
+                <div class="pillar__body">
+                    <span class="kicker">Structure</span>
+                    <h3 class="pillar__title">La structure de l'accompagnement</h3>
+                    <p class="pillar__lead">
+                        Comment nous organisons l'accompagnement dans la durée : la primo-rencontre, les premiers rendez-vous, l'ouverture, l'engagement, le suivi.
+                    </p>
+                    <span class="pillar__link">Lire la page →</span>
+                </div>
             </a>
 
-            <a href="pages/questions-reponses.html" class="card">
-                <div class="card__icon" aria-hidden="true">❓</div>
-                <h3 class="card__title">Questions &amp; Réponses</h3>
-                <p class="card__lead">
-                    Des questions pratiques, des réponses inspirées de la capitalisation et du terrain.
-                </p>
-                <span class="card__link">Consulter</span>
+            <a href="pages/outils.html" class="pillar">
+                <div class="pillar__image">
+                    <img src="assets/img/pillar-outils.jpg" alt="" loading="lazy">
+                </div>
+                <div class="pillar__body">
+                    <span class="kicker">Outils</span>
+                    <h3 class="pillar__title">Les outils de l'accompagnement</h3>
+                    <p class="pillar__lead">
+                        Les techniques concrètes que nous mobilisons en séance : l'écoute, la méta-communication, la reformulation, le questionnement, les questions à échelle, la démarche de valorisation.
+                    </p>
+                    <span class="pillar__link">Lire la page →</span>
+                </div>
+            </a>
+
+            <a href="pages/aller-vers.html" class="pillar">
+                <div class="pillar__image">
+                    <img src="assets/img/pillar-aller-vers.jpg" alt="" loading="lazy">
+                </div>
+                <div class="pillar__body">
+                    <span class="kicker">Aller-vers</span>
+                    <h3 class="pillar__title">L'aller-vers</h3>
+                    <p class="pillar__lead">
+                        Comment nous sortons de nos bureaux pour aller au-devant des personnes les plus éloignées de l'emploi : philosophie, posture, et pratiques concrètes — porte-à-porte, déambulation, partenariats, accueil inconditionnel.
+                    </p>
+                    <span class="pillar__link">Lire la page →</span>
+                </div>
             </a>
 
         </div>
@@ -131,7 +160,8 @@
     <div class="container-narrow text-center">
         <h2 style="margin-bottom: var(--space-3);">Vous souhaitez approfondir ces pratiques avec votre équipe&nbsp;?</h2>
         <p style="font-size: 1.0625rem; color: var(--color-text-muted); margin-bottom: var(--space-5);">
-            Nous formons les professionnels de l'accompagnement qui veulent développer des compétences d'accompagnement vers le développement du pouvoir d'agir des personnes accompagnées
+            Nous formons les professionnels de l'accompagnement qui veulent passer d'une logique d'expertise
+            à une logique de pouvoir d'agir.
         </p>
         <a href="pages/offre.html" class="btn btn-primary btn-arrow">Découvrir notre offre de formation</a>
     </div>
@@ -144,7 +174,7 @@
             <div>
                 <div class="site-footer__brand">Massajobs</div>
                 <p class="site-footer__lead">
-                    Site de capitalisation des pratiques d'accompagnement vers le travail développées
+                    Site de capitalisation des pratiques d'accompagnement vers l'emploi développées
                     par l'association Massajobs depuis 2015 dans les quartiers prioritaires de Marseille.
                 </p>
             </div>
