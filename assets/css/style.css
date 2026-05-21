@@ -365,29 +365,26 @@ strong, b {
 
 /* --------- Hero --------- */
 .hero {
-    /* Le "../" permet de sortir du dossier CSS pour trouver le dossier Assets */
-    /* Attention à bien mettre les guillemets simples à cause de l'espace dans le nom */
-    background-image: url(''https://github.com/benoitchanson-ui/capitalisation-massajobs/blob/main/assets/Accueil%20bandeau.png'');
+    /* 1. On force l'image avec le lien copié (mets ton lien GitHub entre les guillemets) */
+    background-image: url() !important; 
     
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    /* 2. On force la section à être visible même si elle est vide */
+    min-height: 80vh !important; /* Prend 80% de la hauteur de l'écran */
+    display: flex !important;
+    align-items: center;
+    
+    /* 3. Ajustements de l'image */
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
     position: relative; 
 }
 
-/* On garde le voile sombre pour la lisibilité du texte */
-.hero::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.4); 
-    z-index: 1;
-}
-
+/* Sécurité pour que le texte reste visible par-dessus */
 .hero__inner {
     position: relative;
     z-index: 2;
-
+    width: 100%;
 }
 
 .hero__inner {
