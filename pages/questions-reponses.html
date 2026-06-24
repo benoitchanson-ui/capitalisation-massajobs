@@ -11,7 +11,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16.png">
     <link rel="apple-touch-icon" href="../assets/img/logo-massajobs.png">
-    <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "e98f2f7f44a84af298287a1209a644d6"}'></script><!-- End Cloudflare Web Analytics -->
 </head>
 <body>
 
@@ -33,6 +32,7 @@
             <a href="offre.html">Formations</a>
             <a href="questions-reponses.html" class="active">Q&amp;R</a>
             <a href="a-propos.html">À propos</a>
+            <a href="nous-soutenir.html" class="nav-donate">Nous soutenir</a>
         </nav>
     </div>
 </header>
@@ -41,99 +41,82 @@
     <div class="article-header__inner">
         <div class="breadcrumb"><a href="../index.html">Accueil</a><span class="breadcrumb__sep">›</span><span>Questions & Réponses</span></div>
         <h1>Questions &amp; Réponses</h1>
-        <p class="article-header__lead">Des questions pratiques qui reviennent souvent. Chaque réponse renvoie aux sections du site qui approfondissent le sujet.</p>
+        <p class="article-header__lead">Une rubrique à construire ensemble, à partir de vos situations de terrain.</p>
     </div>
 </section>
 
 <div class="reading">
 
-<h2>Posture professionnelle et relation</h2>
+<div class="qa-intro">
+    <p>Dans notre pratique, nous essayons toujours de partir de situations concrètes vécues par les personnes et d'identifier le problème rencontré pour pouvoir apporter la meilleure réponse possible.</p>
+    <p>Ainsi, nous vous proposons de co-construire cette section ensemble, en partant de vos questions de terrain. Vous trouverez ci-dessous un formulaire pour nous faire parvenir vos questions.</p>
+    <p>Nous essaierons d'y répondre dans un délai maximum de trois jours pour les premières questions.</p>
+</div>
 
-<details open>
-    <summary>Comment maintenir une posture d'accompagnement sans glisser vers la prescription ou le conseil directif ?</summary>
-    <div class="details__body">
-        <p>La tension entre l'envie d'aider vite et le respect du rythme de la personne est au cœur de notre pratique. Cette question est explorée à travers la posture de <strong>« passeur »</strong> et l'identification des obstacles qui éloignent d'une posture juste.</p>
-        <p>→ Voir <a href="posture.html#postures">Les différentes postures</a>, <a href="posture.html#obstacles">Les obstacles à une posture juste</a> et <a href="outils.html#info-conseil">Donner une information ou un conseil</a>.</p>
+<form class="qa-form" id="qa-form" action="https://formspree.io/f/xojbrzng" method="POST" novalidate>
+
+    <h2 class="qa-form__title">Posez votre question</h2>
+
+    <div class="form-field">
+        <label class="form-label" for="qa-name">Votre nom <span class="required" aria-hidden="true">*</span></label>
+        <input class="form-input" type="text" id="qa-name" name="nom" required placeholder="Prénom Nom" autocomplete="name">
+        <label class="form-checkbox-row">
+            <input type="checkbox" name="afficher_nom" value="oui">
+            <span>J'accepte que mon nom soit affiché dans la Q&amp;R publiée</span>
+        </label>
     </div>
-</details>
 
-<details>
-    <summary>Comment gérer l'agacement, la pitié ou l'attachement envers une personne accompagnée ?</summary>
-    <div class="details__body">
-        <p>Ces réactions font partie du métier. Les trois outils pour les traverser sans qu'elles ne contaminent la relation sont <strong>l'intention</strong>, <strong>la préparation de l'entretien</strong> et <strong>les espaces de relecture</strong>.</p>
-        <p>→ Voir <a href="posture.html#intention">L'intention, support de la posture</a> et <a href="posture.html#facteurs-favorables">Facteurs favorisant une posture juste</a>.</p>
+    <div class="form-field">
+        <label class="form-label" for="qa-structure">Votre structure d'appartenance <span class="form-help" style="display:inline; margin:0; font-weight:400;">(facultatif)</span></label>
+        <input class="form-input" type="text" id="qa-structure" name="structure" placeholder="Association, mission locale, collectivité…" autocomplete="organization">
+        <label class="form-checkbox-row">
+            <input type="checkbox" name="afficher_structure" value="oui">
+            <span>J'accepte que ma structure soit affichée dans la Q&amp;R publiée</span>
+        </label>
     </div>
-</details>
 
-<details>
-    <summary>Comment rester dans son rôle face à une personne en détresse psychologique ou en crise ?</summary>
-    <div class="details__body">
-        <p>La question des limites du champ d'intervention est fondamentale. Elle renvoie à trois dimensions : la posture, le cadre de l'accompagnement, et la nécessité d'un réseau partenarial.</p>
-        <p>→ Voir <a href="posture.html#posture-pertinente">Qu'est-ce qu'une posture pertinente ?</a>, <a href="matiere.html#contrat">Définir le contrat et les objectifs</a> et <a href="aller-vers.html#partenariats">Le travail partenarial et les relais</a>.</p>
+    <div class="form-field">
+        <label class="form-label" for="qa-email">Votre email <span class="required" aria-hidden="true">*</span></label>
+        <input class="form-input" type="email" id="qa-email" name="email" required placeholder="vous@votre-structure.fr" autocomplete="email">
+        <span class="form-help">Utilisé uniquement pour vous répondre. Ne sera jamais affiché publiquement.</span>
     </div>
-</details>
 
-<h2>Émergence et nature de la demande</h2>
-
-<details>
-    <summary>Comment accompagner quelqu'un qui ne demande rien ou qui ne sait pas ce qu'il veut ?</summary>
-    <div class="details__body">
-        <p>La non-demande est une réalité centrale dans nos quartiers. L'approche d'<strong>aller-vers</strong> est précisément conçue pour créer les conditions où une demande peut émerger — sans jamais la fabriquer artificiellement.</p>
-        <p>→ Voir <a href="aller-vers.html#demande">Créer les conditions d'une demande possible</a> et <a href="matiere.html#non-demande">En cas de non-demande</a>.</p>
+    <div class="form-field">
+        <label class="form-label" for="qa-situation">Situation concrète rencontrée <span class="required" aria-hidden="true">*</span></label>
+        <textarea class="form-textarea" id="qa-situation" name="situation" required rows="4" placeholder="Décrivez brièvement le contexte de la situation que vous avez vécue."></textarea>
+        <span class="form-help">Quelques phrases pour planter le décor — quel public, quel cadre, à quel moment.</span>
     </div>
-</details>
 
-<details>
-    <summary>Comment fixer un objectif avec quelqu'un dont la priorité est la survie immédiate ?</summary>
-    <div class="details__body">
-        <p>L'urgence vécue par la personne est réelle — mais elle n'impose pas toujours une réaction immédiate de notre part. Yann Le Bossé invite à <strong>« l'urgence d'attendre »</strong> pour ne pas agir à la place de la personne.</p>
-        <p>→ Voir <a href="posture.html#urgence">Questionner l'urgence pour se donner de l'air</a> et <a href="matiere.html#probleme">La problématisation</a>.</p>
+    <div class="form-field">
+        <label class="form-label" for="qa-question">Votre question <span class="required" aria-hidden="true">*</span></label>
+        <textarea class="form-textarea" id="qa-question" name="question" required rows="4" placeholder="Que cherchez-vous à comprendre, à clarifier, à résoudre ?"></textarea>
     </div>
-</details>
 
-<h2>Structure et conduite de l'accompagnement</h2>
-
-<details>
-    <summary>Comment travailler avec quelqu'un qui revient à chaque séance avec un nouveau problème sans jamais avancer ?</summary>
-    <div class="details__body">
-        <p>La dispersion de la demande est souvent le signe que le contrat de séance n'est pas assez solide. Les deux outils clés pour maintenir le cap sont <strong>la négociation du contrat</strong> et <strong>la relecture de l'interséance</strong>.</p>
-        <p>→ Voir <a href="structure.html#contrat-seance">La négociation du contrat de séance</a> et <a href="structure.html#relecture">La relecture de l'interséance</a>.</p>
+    <!-- Anti-spam honeypot : invisible aux humains, rempli par les bots -->
+    <div class="form-honeypot" aria-hidden="true">
+        <label>Ne pas remplir : <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label>
     </div>
-</details>
 
-<details>
-    <summary>Comment savoir quand il est temps de mettre fin à un accompagnement — même si la personne ne le souhaite pas ?</summary>
-    <div class="details__body">
-        <p>La fin d'un accompagnement est un acte professionnel à part entière. Une <strong>typologie des différents types de fin</strong> et des <strong>comportements observables des deux côtés de la relation</strong> sont proposées.</p>
-        <p>→ Voir <a href="structure.html#fin">Les différentes fins possibles</a> et <a href="structure.html#dernier-entretien">Le dernier entretien</a>.</p>
+    <!-- Métadonnées Formspree -->
+    <input type="hidden" name="_subject" value="Nouvelle question Q&R Massajobs">
+
+    <div class="form-field">
+        <label class="form-checkbox-row is-required">
+            <input type="checkbox" name="consentement_rgpd" value="oui" required>
+            <span>J'accepte que les informations transmises dans ce formulaire soient utilisées par Massajobs pour répondre à ma question et, le cas échéant, publier la question et sa réponse dans la rubrique Q&amp;R en respectant mes choix d'affichage. Je peux demander à tout moment la suppression de ces données en écrivant à <a href="mailto:benoit.chanson@massajobs.org">benoit.chanson@massajobs.org</a>.</span>
+        </label>
     </div>
-</details>
 
-<details>
-    <summary>Comment accompagner quelqu'un dont l'objectif professionnel semble irréaliste ?</summary>
-    <div class="details__body">
-        <p>Notre rôle n'est pas de valider ou d'invalider un objectif, mais d'explorer avec la personne ce qui le rend viable ou non. Deux repères : la distinction entre <strong>aspiration et besoin</strong>, et la notion d'objectif <strong>« écologique »</strong>.</p>
-        <p>→ Voir <a href="matiere.html#probleme">La problématisation</a> et <a href="matiere.html#action">Orienter vers l'action</a>.</p>
+    <div class="form-actions">
+        <button class="btn btn-primary form-submit" type="submit">Envoyer ma question</button>
     </div>
-</details>
 
-<h2>Contexte institutionnel et enjeux politiques</h2>
+    <div class="form-status" id="qa-status" role="status" aria-live="polite"></div>
+</form>
 
-<details>
-    <summary>Comment accompagner efficacement quand les contraintes institutionnelles entrent en tension avec les besoins réels de la personne ?</summary>
-    <div class="details__body">
-        <p>Cette tension est structurelle. Elle est nommée et analysée à travers les enjeux des acteurs de la chaîne de production des services sociaux, et les facteurs favorisant une posture juste malgré les pressions.</p>
-        <p>→ Voir <a href="posture.html#action-sous-influence">Une action sous influence</a> et <a href="posture.html#facteurs-favorables">Les facteurs favorisant une posture juste</a>.</p>
-    </div>
-</details>
-
-<details>
-    <summary>Comment éviter de reproduire des postures de contrôle social dans notre accompagnement ?</summary>
-    <div class="details__body">
-        <p>C'est la question la plus exigeante — et la plus nécessaire. Le <strong>modèle DPA-PC de Yann Le Bossé</strong> est entièrement structuré autour de cette vigilance, et la pratique d'aller-vers y est directement reliée.</p>
-        <p>→ Voir <a href="posture.html#postures">Les différentes postures et leurs effets</a> et <a href="aller-vers.html#pouvoir-agir">Pratique d'aller-vers et pouvoir d'agir</a>.</p>
-    </div>
-</details>
+<div class="qa-empty">
+    Les premières questions et leurs réponses apparaîtront ici au fur et à mesure.
+</div>
 
 </div>
 
@@ -157,6 +140,7 @@
                 <ul class="site-footer__links">
                     <li><a href="https://www.massajobs.org" target="_blank" rel="noopener">Site institutionnel ↗</a></li>
                     <li><a href="mailto:contact@massajobs.fr">contact@massajobs.fr</a></li>
+                    <li><a href="nous-soutenir.html">Nous soutenir</a></li>
                 </ul>
             </div>
         </div>
@@ -167,6 +151,68 @@
     </div>
 </footer>
 
+<script>
+// Soumission AJAX du formulaire Q&R vers Formspree
+(function () {
+    var form = document.getElementById('qa-form');
+    var status = document.getElementById('qa-status');
+    if (!form || !status) return;
+
+    function showStatus(type, message) {
+        status.className = 'form-status is-visible is-' + type;
+        status.textContent = message;
+    }
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        // Validation HTML5 native
+        if (!form.checkValidity()) {
+            form.reportValidity();
+            return;
+        }
+
+        var submitBtn = form.querySelector('button[type="submit"]');
+        var originalLabel = submitBtn.textContent;
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Envoi en cours…';
+        status.className = 'form-status';
+
+        var data = new FormData(form);
+
+        fetch(form.action, {
+            method: 'POST',
+            body: data,
+            headers: { 'Accept': 'application/json' }
+        })
+        .then(function (response) {
+            if (response.ok) {
+                form.reset();
+                showStatus('success',
+                    'Merci ! Votre question a bien été reçue. ' +
+                    'Nous vous répondrons par email dans un délai maximum de trois jours.');
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Question envoyée';
+                form.style.opacity = '0.7';
+            } else {
+                return response.json().then(function (data) {
+                    var msg = (data && data.errors && data.errors.map(function (e) { return e.message; }).join(', '))
+                              || 'Une erreur est survenue. Merci de réessayer dans un moment, ou de nous écrire directement à benoit.chanson@massajobs.org.';
+                    showStatus('error', msg);
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = originalLabel;
+                });
+            }
+        })
+        .catch(function () {
+            showStatus('error',
+                'L’envoi a échoué. Vérifiez votre connexion ou écrivez-nous directement à benoit.chanson@massajobs.org.');
+            submitBtn.disabled = false;
+            submitBtn.textContent = originalLabel;
+        });
+    });
+})();
+</script>
 <script src="../assets/js/search.js" defer></script>
 </body>
 </html>
