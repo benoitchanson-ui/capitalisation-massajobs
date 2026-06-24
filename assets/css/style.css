@@ -2584,3 +2584,111 @@ body.search-open {
         align-self: flex-start;
     }
 }
+
+/* --------- Carte de téléchargement PDF --------- */
+.pdf-card {
+    display: flex;
+    align-items: stretch;
+    gap: 1.25rem;
+    background: var(--color-bg-alt);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: 1.5rem 1.75rem;
+    margin: 1.75rem 0;
+    transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+.pdf-card:hover {
+    border-color: var(--color-massa-blue);
+    box-shadow: 0 4px 16px -6px rgba(0,0,0,0.1);
+}
+.pdf-card__icon {
+    flex-shrink: 0;
+    width: 56px;
+    height: 70px;
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-massa-orange);
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    position: relative;
+}
+.pdf-card__icon::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    background: var(--color-bg-alt);
+    border-left: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+    border-bottom-left-radius: 4px;
+}
+.pdf-card__body {
+    flex: 1;
+    min-width: 0;
+}
+.pdf-card__kicker {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-massa-blue);
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+.pdf-card__title {
+    margin: 0 0 0.4rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--color-text);
+    line-height: 1.35;
+}
+.pdf-card__text {
+    margin: 0 0 0.85rem;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    color: var(--color-text-muted);
+}
+.pdf-card__meta {
+    margin: 0 0 0.85rem;
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+}
+.pdf-card__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.55rem 1.1rem;
+    background: var(--color-massa-orange);
+    color: #fff;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 150ms ease;
+}
+.pdf-card__btn:hover,
+.pdf-card__btn:focus-visible {
+    background: #d8521a;
+    outline: none;
+    color: #fff;
+}
+
+@media (max-width: 540px) {
+    .pdf-card {
+        flex-direction: column;
+        padding: 1.25rem;
+    }
+    .pdf-card__icon {
+        align-self: flex-start;
+    }
+}
+
+@media print {
+    .pdf-card { display: none !important; }
+}
